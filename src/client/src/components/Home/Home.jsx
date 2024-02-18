@@ -1,15 +1,17 @@
 import React from 'react'
-import Combo from './cal+annou/Combo'
-import Aboutus from './Aboutus/Aboutus'
+import CalAnce from './CalAnce/CalAnce'
+import AboutUs from './AboutUs/AboutUs'
 import Councils from './Councils/Councils'
+import Footer from './Footer/Footer'
 import './home.css'
 
 const Home = () => {
   return (
-    <div className='home' style={{overflow:'scroll',zIndex:'1'}}>
-    <Combo/>
-    <Aboutus/>
+    <div className='home' style={{overflowY:'scroll',zIndex:'1'}}>
+    <CalAnce/>
+    <AboutUs/>
     <Councils />
+    <Footer/>
     </div>
   )
 }

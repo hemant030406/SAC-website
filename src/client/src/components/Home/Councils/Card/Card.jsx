@@ -1,11 +1,12 @@
 import React from 'react'
-import './Card.css'
 
 const Card = (props) => {
   return (
-    <div className='container crd d-flex flex-column justify-content-center align-items-center'>
-      <div className='crdimg' style={{backgroundImage:`url(${props.imgUrl})`}}></div>
-      <div className='crdtit'><p>{props.title}</p></div>
+    <div className="card crd" style={{width:'22rem',height:'20rem',margin:'2rem 1.5rem 0rem'}}>
+      <img src={props.imgUrl} class="card-img-top crdimg" alt="..." style={{width:'22rem',height:'16rem'}} />
+      <div class="card-body crdtit">
+        <p class="card-text" style={{textAlign:'center',fontSize:'150%'}}>{props.title}</p>
+      </div>
     </div>
   )
 }

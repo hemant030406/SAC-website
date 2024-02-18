@@ -1,7 +1,7 @@
 import React from 'react'
-import Announce from './Announcements/Announce'
+import Announce from './Announce/Announce'
 import Calendar from './Calendar/Calendar'
-import './Combo.css'
+import './CalAnce.css'
 
 const combo = () => {
   return (
