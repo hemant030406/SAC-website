@@ -1,0 +1,18 @@
+.crd{
+    margin: 1rem 0.5rem 0rem;
+    padding: 1rem;
+    width: 22rem;
+    height: 20rem;
+}
+.crdimg{
+    width: 20rem;
+    height: 15rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.crdtit p {
+    width: 25rem;
+    text-align: center;
+    padding: 0.5em;
+}
