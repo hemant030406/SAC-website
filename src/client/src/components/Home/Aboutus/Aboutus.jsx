@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import React from 'react'
-import './Aboutus.css'
-=======
 import React from "react";
 import "./Aboutus.css";
->>>>>>> cabdcb19a7227d7ca17a4675e9fae1ece84345fe
 
 const Aboutus = () => {
   return (
