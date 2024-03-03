@@ -1,6 +1,6 @@
 import React from 'react'
 import CalAnce from './CalAnce/CalAnce'
-import AboutUs from './AboutUs/AboutUs'
+import AboutUs from './Aboutus/Aboutus'
 import Councils from './Councils/Councils'
 import Footer from './Footer/Footer'
 import './home.css'
