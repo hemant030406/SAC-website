@@ -1,7 +1,7 @@
 import React from "react";
-import "./Aboutus.css";
+import "./AboutUs.css";
 
-const Aboutus = () => {
+const AboutUs = () => {
   return (
     <div className="container abtus d-flex flex-column justify-content-center align-items-center mt-5 mb-5">
       <h1 className="abtTit position-relative d-inline-block pb-4">About Us</h1>
@@ -18,4 +18,4 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
+export default AboutUs;
