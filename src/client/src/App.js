@@ -4,32 +4,42 @@ import axios from 'axios'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './scss/main.css'
 import Nav from './components/Home/Navbar/Nav';
-import Footer from './components/Home/Footer/Footer';
 import Home from './components/Home/Home';
 import Landing from './components/Landing_Page/LandingPage'
+import Login from './components/Login/Login';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom'
 
 function App() {
-  const [isDisplayed, setIsDisplayed] = useState(false);
-  useEffect(() => {
-    setInterval(() => {
-      setIsDisplayed(true);
-    }, 3000);
-  }, []);
+  const [duration,setDuration] = useState(true)
+  useEffect(
+    () => {
+      setTimeout(() => {
+        setDuration(false);
+      },3000);
+    },[]
+  )
 
   return (
-    <>
-    {
-      !isDisplayed && <>
-      <Landing/>
-      </>
-    }
-    {isDisplayed &&
-              <>
-                <Nav/>
-                <Home/>
-              </>
-    }
-    </>
+    <Router>
+      <Routes> 
+        <Route 
+          path = "/" element={
+            duration ? <Landing/>:
+            <>
+            <Nav/>
+            <Home/>
+            </>
+            }
+        />
+        <Route path="/login" element={
+            <Login/>
+        }/>
+      </Routes>
+    </Router>
   );
 }
 
