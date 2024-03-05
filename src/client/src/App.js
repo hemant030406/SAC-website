@@ -10,7 +10,6 @@ import Home from './components/Home/Home';
 function App() {
 
   return (
-    // <div className='container btn' > Hello world </div>
     <>
     <Nav/>
     <Home/>
