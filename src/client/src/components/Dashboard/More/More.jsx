@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../Layout/Layout'
 
-const Announce = () => {
+const More = () => {
   return (
-    <Layout/>
+    <Layout ele = 'more'  />
   )
 }
 
-export default Announce
+export default More

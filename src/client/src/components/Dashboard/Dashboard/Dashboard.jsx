@@ -3,7 +3,7 @@ import Layout from '../Layout/Layout'
 
 const Dashboard = () => {
     return (
-        <Layout/>
+        <Layout ele = 'dashboard' />
     )
 }
 

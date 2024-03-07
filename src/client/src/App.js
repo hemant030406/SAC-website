@@ -10,14 +10,16 @@ import {
   Route,
   Routes
 } from 'react-router-dom'
-import Dashboard from './components/Dashboard/Dashboard/Dashboard';\
+import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import Landing from './components/Landing_Page/LandingPage'
 import Login from './components/Login/Login';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom'
+import Announce from './components/Home/CalAnce/Announce/Announce';
+import Announcements from './components/Dashboard/Announcements/Announcements';
+import Calendar from './components/Dashboard/Calendar/Calendar';
+import Clubs from './components/Dashboard/Clubs/Clubs';
+import LiveEvents from './components/Dashboard/LiveEvents/LiveEvents';
+import Opportunities from './components/Dashboard/Opportunities/Opportunities';
+import More from './components/Dashboard/More/More';
 
 function App() {
   const [duration,setDuration] = useState(true)
@@ -32,25 +34,16 @@ function App() {
   return (
     // <div className='container btn' > Hello world </div>
     <Router>
-    {/* <Nav/> */}
-    <Routes>
-    <Route exact path = '/' element = {<Home/>}/>
-    <Route exact path = '/dashboard' element = {<Dashboard/>}/>
-    </Routes>
-    <Router>
       <Routes> 
-        <Route 
-          path = "/" element={
-            duration ? <Landing/>:
-            <>
-            <Nav/>
-            <Home/>
-            </>
-            }
-        />
-        <Route path="/login" element={
-            <Login/>
-        }/>
+        <Route path = "/" element={duration ? <Landing/>:<Home/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route exact path = '/dashboard' element = {<Dashboard/>}/>
+        <Route path="/announcements" element={<Announcements/>}/>
+        <Route path="/calendar" element={<Calendar/>}/>
+        <Route path="/clubs" element={<Clubs/>}/>
+        <Route path="/live-events" element={<LiveEvents/>}/>
+        <Route path="/opportunities" element={<Opportunities/>}/>
+        <Route path="/more" element={<More/>}/>
       </Routes>
     </Router>
   );
