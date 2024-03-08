@@ -1,0 +1,9 @@
+.lylist{
+    list-style: none;
+    font-size: 150%;
+    width: inherit;
+    padding: 1.5rem 4rem;
+}
+.lylistmid{
+    border-bottom:1px solid #e2dbdb;
+}
