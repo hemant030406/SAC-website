@@ -3,8 +3,7 @@ import { FaHome, FaRegCalendar } from 'react-icons/fa'
 import { HiAnnotation, HiDotsHorizontal } from "react-icons/hi";
 import { IoPeopleSharp } from "react-icons/io5";
 import { GiAerialSignal } from "react-icons/gi";
-import './Layout.css'
-import ActCard from './ActCard/ActCard';
+import './LayoutLeft.css'
 import { Link } from 'react-router-dom';
 
 const Layout = (props) => {
@@ -39,12 +38,11 @@ const Layout = (props) => {
     }
 
     return (
-        <div>
-            <div className='left d-inline-flex flex-column' style={{ width: '23rem' }}>
+            <div className='left d-inline-flex flex-column' style={{ width: '20rem',position:'absolute',left:'0' }}>
 
                 <div id="navbarText" style={{ marginTop: '3rem', paddingBottom: '2rem', width: 'inherit' }}>
 
-                    <span class="navbar-text active" style={{ color: 'black', fontSize: '155%', paddingLeft: '5rem' }}>
+                    <span class="navbar-text active" style={{ color: 'black', fontSize: '140%', paddingLeft: '5rem' }}>
                         Student Affairs Council
                         <p style={{ fontSize: '58%', paddingLeft: '5rem' }}>
                             Indian Institute of Technology Palakkad
@@ -111,24 +109,6 @@ const Layout = (props) => {
                 </div>
 
             </div>
-
-            <div className="right d-flex flex-column" style={{ float: 'right', marginRight: '6rem', width: '20rem', marginTop: '3rem' }}>
-                <div className='d-flex flex-row flex-end' style={{justifyContent:'flex-end'}}>
-                    <div className='d-flex' style={{ fontSize: '150%',marginRight:'1rem',alignItems:'center',justifyContent:'center',fontWeight:'bold' }}>UserName</div>
-                    <div>
-                        <img src="https://imgs.search.brave.com/UWcdz0qOM8w4GiYkAf4whayq8imfZEFa_sqmPBXgUww/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9ocmx0eDEy/cGw4aHEvNTU5Nnoy/QkNSOUttVDFLZVJC/ck9RYS80MDcwZmQ0/ZTJmMWExM2Y3MWMy/YzQ2YWZlYjE4ZTQx/Yy9zaHV0dGVyc3Rv/Y2tfNDUxMDc3MDQz/LWhlcm8xLmpwZz9m/aXQ9ZmlsbCZ3PTYw/MCZoPTEyMDA" class="rounded-circle" alt="..." style={{ width: '4rem', height: '4rem' }} />
-                    </div>
-                </div>
-                <div style={{marginTop:'2rem'}}>
-                    <h3>Activity</h3>
-                    <ActCard imgUrl="https://imgs.search.brave.com/UWcdz0qOM8w4GiYkAf4whayq8imfZEFa_sqmPBXgUww/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9ocmx0eDEy/cGw4aHEvNTU5Nnoy/QkNSOUttVDFLZVJC/ck9RYS80MDcwZmQ0/ZTJmMWExM2Y3MWMy/YzQ2YWZlYjE4ZTQx/Yy9zaHV0dGVyc3Rv/Y2tfNDUxMDc3MDQz/LWhlcm8xLmpwZz9m/aXQ9ZmlsbCZ3PTYw/MCZoPTEyMDA" name='Name' club='YACC' content='Lorem ipsum dolor...' />
-                    <ActCard imgUrl="https://imgs.search.brave.com/UWcdz0qOM8w4GiYkAf4whayq8imfZEFa_sqmPBXgUww/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9ocmx0eDEy/cGw4aHEvNTU5Nnoy/QkNSOUttVDFLZVJC/ck9RYS80MDcwZmQ0/ZTJmMWExM2Y3MWMy/YzQ2YWZlYjE4ZTQx/Yy9zaHV0dGVyc3Rv/Y2tfNDUxMDc3MDQz/LWhlcm8xLmpwZz9m/aXQ9ZmlsbCZ3PTYw/MCZoPTEyMDA" name='Name' club='YACC' content='Lorem ipsum dolor...' />
-                    <ActCard imgUrl="https://imgs.search.brave.com/UWcdz0qOM8w4GiYkAf4whayq8imfZEFa_sqmPBXgUww/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9ocmx0eDEy/cGw4aHEvNTU5Nnoy/QkNSOUttVDFLZVJC/ck9RYS80MDcwZmQ0/ZTJmMWExM2Y3MWMy/YzQ2YWZlYjE4ZTQx/Yy9zaHV0dGVyc3Rv/Y2tfNDUxMDc3MDQz/LWhlcm8xLmpwZz9m/aXQ9ZmlsbCZ3PTYw/MCZoPTEyMDA" name='Name' club='YACC' content='Lorem ipsum dolor...' />
-                    <ActCard imgUrl="https://imgs.search.brave.com/UWcdz0qOM8w4GiYkAf4whayq8imfZEFa_sqmPBXgUww/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9ocmx0eDEy/cGw4aHEvNTU5Nnoy/QkNSOUttVDFLZVJC/ck9RYS80MDcwZmQ0/ZTJmMWExM2Y3MWMy/YzQ2YWZlYjE4ZTQx/Yy9zaHV0dGVyc3Rv/Y2tfNDUxMDc3MDQz/LWhlcm8xLmpwZz9m/aXQ9ZmlsbCZ3PTYw/MCZoPTEyMDA" name='Name' club='YACC' content='Lorem ipsum dolor...' />
-                    <ActCard imgUrl="https://imgs.search.brave.com/UWcdz0qOM8w4GiYkAf4whayq8imfZEFa_sqmPBXgUww/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9ocmx0eDEy/cGw4aHEvNTU5Nnoy/QkNSOUttVDFLZVJC/ck9RYS80MDcwZmQ0/ZTJmMWExM2Y3MWMy/YzQ2YWZlYjE4ZTQx/Yy9zaHV0dGVyc3Rv/Y2tfNDUxMDc3MDQz/LWhlcm8xLmpwZz9m/aXQ9ZmlsbCZ3PTYw/MCZoPTEyMDA" name='Name' club='YACC' content='Lorem ipsum dolor...' />
-                </div>
-            </div>
-        </div>
     )
 }
 

@@ -19,13 +19,13 @@ const Nav = () => {
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item mx-4">
-                                <a class="nav-link active" href="#">About Us</a>
+                                <a class="nav-link active" href="#homeAbout">About Us</a>
                             </li>
                             <li class="nav-item mx-4">
-                                <a class="nav-link active" href="#">Councils</a>
+                                <a class="nav-link active" href="#homeCouncils">Councils</a>
                             </li>
                             <li class="nav-item mx-4">
-                                <a class="nav-link active" href="#">Announcements</a>
+                                <a class="nav-link active" href="#homeAnnounce">Announcements</a>
                             </li>
                             <li class="nav-item mx-4">
                                 <Link class="nav-link active" to="/login">SIGN IN</Link>

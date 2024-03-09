@@ -1,4 +1,4 @@
-.annHead::before{
+.homeAnnHead::before{
     content: '';
     position: absolute;
     left: 0;
@@ -8,9 +8,9 @@
     background-color: rgb(110, 120, 5);
     border-radius: 5%/100%;
 }
-.announce{
+.homeAnnounce{
     width: 50%;
 }
-.annList li{
+.homeAnnList li{
     margin-bottom: 2rem;
 }
