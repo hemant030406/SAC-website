@@ -30,7 +30,7 @@ const Councils = (props) => {
     },
   ]
   return (
-    <div className='container councils d-flex flex-column justify-content-center align-items-center mt-5 mb-5'>
+    <div id='homeCouncils' className='container councils d-flex flex-column justify-content-center align-items-center mt-5 mb-5'>
     <h1 className='conHead position-relative d-inline-block pb-4'>Councils</h1>
     <div className='cards d-flex flex-row flex-wrap justify-content-center align-items-center'>
       {

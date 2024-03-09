@@ -3,13 +3,13 @@ import "./Calendar.css";
 
 const Calendar = () => {
   return (
-    <div className="cal d-flex flex-column mt-5 mb-5">
+    <div className="homeCal d-flex flex-column mt-5 mb-5">
       <div className="calTitdiv d-flex justify-content-end">
-        <h1 className="calHead position-relative d-inline-block pb-4">
+        <h1 className="homeCalHead position-relative d-inline-block pb-4">
           Calendar
         </h1>
       </div>
-      <div className="calcont">
+      <div className="homeCalCont">
         <div id="calender-left">
           <div className="Month d-flex bd-highlight">
             <button

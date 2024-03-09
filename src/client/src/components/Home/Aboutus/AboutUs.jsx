@@ -3,7 +3,7 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div className="container abtus d-flex flex-column justify-content-center align-items-center mt-5 mb-5">
+    <div id='homeAbout' className="container abtus d-flex flex-column justify-content-center align-items-center mt-5 mb-5">
       <h1 className="abtTit position-relative d-inline-block pb-4">About Us</h1>
       <div className="abtDat d-flex flex-column justify-content-center align-items-center row">
         <p className="abtPara col-8 my-4">
