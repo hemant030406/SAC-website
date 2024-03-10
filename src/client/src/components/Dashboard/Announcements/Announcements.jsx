@@ -1,21 +1,23 @@
 import React from 'react'
 import LayoutLeft from '../Layout/LayoutLeft'
 import LayoutRight from '../Layout/LayoutRight'
+import AnncmtComponent from './AnncmtComponent'
 
 const Announcements = () => {
-  return (
+    return (
         <div className='d-flex flex-row'>
             <div style={{ width: '20rem' }}>
                 <LayoutLeft ele='announce' />
             </div>
-            <div className='' style={{ width: '40rem', margin: '10rem 4rem', textAlign: 'justify'}}>
+            <div className='' style={{ width: 'auto', margin: '3rem 1rem', textAlign: 'justify' }}>
                 <div className='anncHead'>
                     <h1>Announcements</h1>
                 </div>
-                <div className="anncCont">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.
-                    Non placeat molestiae eos, mollitia doloremque quasi aliquam minus, ea asperiores fugiat, accusantium dolorum obcaecati pariatur id? Mollitia eveniet, repellat deleniti, voluptates optio accusamus natus possimus sapiente dicta quibusdam perferendis.
-                    Commodi tempora veritatis ea fuga nam impedit corporis enim amet odio. Non laborum quaerat aliquid praesentium fugit esse eaque ut dolorem, ipsam commodi amet dolor. Quidem laboriosam error dolore ex?
+                <div className="anncCont container ">
+                    <AnncmtComponent clubName='CLUB NAME' time='3 hrs ago' eventTitle='Announcement/Event Title' content='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.'/>
+                    <AnncmtComponent clubName='CLUB NAME' time='2 hrs ago' eventTitle='Announcement/Event Title' content='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.'/>
+                    <AnncmtComponent clubName='CLUB NAME' time='2 hrs ago' eventTitle='Announcement/Event Title' content='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.'/>
+                    <AnncmtComponent clubName='CLUB NAME' time='1 hrs ago' eventTitle='Announcement/Event Title' content='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.'/>
                 </div>
             </div>
             <div style={{ width: '20rem' }}>
