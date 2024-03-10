@@ -9,8 +9,8 @@
     border-radius: 5%/100%;
 }
 .abtimg{
-    background-image: url('https://imgs.search.brave.com/jYJenORZ1vlj73g6bbNTraWjAF0iMRCR9mtFLuRWJF8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/aWNlLWNyYWNrcy1v/bi1hLWZyb3plbi1z/ZWEuanBnP3dpZHRo/PTEwMDAmZm9ybWF0/PXBqcGcmZXhpZj0w/JmlwdGM9MA');
+    background-image: url('./../../../../public/Banner0.jpg');
     background-size: cover;
     width: 140%;
     height: 35rem;
-}
+} 

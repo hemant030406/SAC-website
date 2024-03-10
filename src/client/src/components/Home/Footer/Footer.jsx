@@ -4,7 +4,7 @@ import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className='footer p-5' style={{zIndex:'1'}}>
+    <div className='footer p-3' style={{zIndex:'1'}}>
       <div className='sac-text' style={{ paddingLeft: '10rem' }}>
         <span style={{fontSize: '250%' }}>
           Student Affairs Council
@@ -12,7 +12,7 @@ const Footer = () => {
         </span>
       </div>
       <div className='mid d-flex flex-row'>
-        <div className='drct d-flex flex-column' style={{width:'50%',paddingLeft:'2rem'}}>
+        <div className='drct d-flex flex-column' style={{width:'50%',paddingLeft:'2rem',paddingTop:'2rem'}}>
         <span>
           <a href='#' className='d-flex' style={{ textDecoration: 'none',fontSize:'150%',color:'black'}}>Home</a>
           <a href='#' className='d-flex' style={{ textDecoration: 'none',fontSize:'150%',color:'black'}}>Login</a>
@@ -27,7 +27,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div className='social d-flex justify-content-center mt-5' style={{textDecoration:'underline'}}>
+      <div className='social d-flex justify-content-center mt-0' style={{textDecoration:'underline'}}>
       <FaGithub className='mx-3' size={30} style={{color:'white'}}/>
       <FaTwitter className='mx-3' size={30} style={{color:'white'}}/>
       <FaLinkedin className='mx-3' size={30} style={{color:'white'}}/>
