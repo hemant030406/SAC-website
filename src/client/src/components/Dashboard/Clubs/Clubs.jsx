@@ -1,28 +1,60 @@
-import React from 'react'
-import LayoutLeft from '../Layout/LayoutLeft'
-import LayoutRight from '../Layout/LayoutRight'
+import React from "react";
+import LayoutLeft from "../Layout/LayoutLeft";
+import LayoutRight from "../Layout/LayoutRight";
+import MyClubs from "./components/MyClubs";
+import "./styles.css";
 
 const Clubs = () => {
   return (
-        <div className='d-flex flex-row'>
-            <div style={{ width: '20rem' }}>
-                <LayoutLeft ele='clubs' />
+    <div className="d-flex flex-row">
+      <div style={{ width: "20rem" }}>
+        <LayoutLeft ele="clubs" />
+      </div>
+      <div
+        className=""
+        style={{ width: "40rem", margin: "10rem 4rem", textAlign: "justify" }}
+      >
+        <div id="Clubs" className="clubs">
+          <h3>My Clubs</h3>
+          <div className="d-flex flex-column">
+            <div className="d-flex flex-row">
+              <MyClubs />
+              <MyClubs />
+              <MyClubs />
             </div>
-            <div className='' style={{ width: '40rem', margin: '10rem 4rem', textAlign: 'justify'}}>
-                <div className='clubsHead'>
-                    <h1>Clubs</h1>
-                </div>
-                <div className="clubsCont">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.
-                    Non placeat molestiae eos, mollitia doloremque quasi aliquam minus, ea asperiores fugiat, accusantium dolorum obcaecati pariatur id? Mollitia eveniet, repellat deleniti, voluptates optio accusamus natus possimus sapiente dicta quibusdam perferendis.
-                    Commodi tempora veritatis ea fuga nam impedit corporis enim amet odio. Non laborum quaerat aliquid praesentium fugit esse eaque ut dolorem, ipsam commodi amet dolor. Quidem laboriosam error dolore ex?
-                </div>
+            <div className="d-flex flex-row">
+              <MyClubs />
+              <MyClubs />
+              <MyClubs />
             </div>
-            <div style={{ width: '20rem' }}>
-                <LayoutRight />
-            </div>
+          </div>
         </div>
-    )
-}
 
-export default Clubs
+        <div id="Clubs" className="clubs">
+          {/* button at start and other at end side */}
+          <div className="d-flex justify-content-between">
+            <h3>Explore Clubs</h3>
+            <button className="btn btn-primary">Explore More</button>
+          </div>
+          <div className="d-flex flex-column">
+            <div className="d-flex flex-row">
+              <MyClubs />
+              <MyClubs />
+              <MyClubs />
+            </div>
+            <div className="d-flex flex-row">
+              <MyClubs />
+              <MyClubs />
+              <MyClubs />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style={{ width: "20rem" }}>
+        <LayoutRight />
+      </div>
+    </div>
+  );
+};
+
+export default Clubs;
