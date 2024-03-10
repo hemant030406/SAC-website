@@ -5,8 +5,8 @@ import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 const Footer = () => {
   return (
     <div className='footer p-3' style={{zIndex:'1'}}>
-      <div className='sac-text' style={{ paddingLeft: '10rem' }}>
-        <span style={{fontSize: '250%' }}>
+      <div className='sac-text' style={{ paddingLeft: '2rem' }}>
+        <span style={{fontSize: '200%' }}>
           Student Affairs Council
           <p style={{ fontSize: '58%' }}>Indian Institute of Technology Palakkad</p>
         </span>
@@ -14,16 +14,16 @@ const Footer = () => {
       <div className='mid d-flex flex-row'>
         <div className='drct d-flex flex-column' style={{width:'50%',paddingLeft:'2rem',paddingTop:'2rem'}}>
         <span>
-          <a href='#' className='d-flex' style={{ textDecoration: 'none',fontSize:'150%',color:'black'}}>Home</a>
-          <a href='#' className='d-flex' style={{ textDecoration: 'none',fontSize:'150%',color:'black'}}>Login</a>
+          <a href='#' className='d-flex' style={{ textDecoration: 'none',fontSize:'130%',color:'black'}}>Home</a>
+          <a href='#' className='d-flex' style={{ textDecoration: 'none',fontSize:'130%',color:'black'}}>Login</a>
         </span>
         </div>
         <div className='adrs d-flex justify-content-end' style={{width:'50%',float:'right'}}>
           <span style={{fontSize: '150%' }}>
-            <p className='d-flex justify-content-end' style={{ fontSize: '150%', marginBottom: '0' }}>Address</p>
-            <p className='d-flex justify-content-end' style={{ fontSize: '100%', marginBottom: '0' }}>Indian Institute of Technology Palakkad</p>
-            <p className='d-flex justify-content-end' style={{ fontSize: '100%', marginBottom: '0' }}>Kanjikode | Palakkad</p>
-            <p className='d-flex justify-content-end' style={{ fontSize: '100%', marginBottom: '0' }}>Kerala | Pin: 678623</p>
+            <p className='d-flex justify-content-end' style={{ fontSize: '130%', marginBottom: '0' }}>Address</p>
+            <p className='d-flex justify-content-end' style={{ fontSize: '80%', marginBottom: '0' }}>Indian Institute of Technology Palakkad</p>
+            <p className='d-flex justify-content-end' style={{ fontSize: '80%', marginBottom: '0' }}>Kanjikode | Palakkad</p>
+            <p className='d-flex justify-content-end' style={{ fontSize: '80%', marginBottom: '0' }}>Kerala | Pin: 678623</p>
           </span>
         </div>
       </div>
@@ -36,4 +36,5 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;
+
