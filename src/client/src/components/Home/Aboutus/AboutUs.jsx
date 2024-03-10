@@ -12,10 +12,16 @@ const AboutUs = () => {
           veniam excepturi natus magni maxime rerum ab. Laborum delectus soluta
           corrupti officiis!
         </p>
-        <div class="abtimg"></div>
+        
+        <div className="abtimg">
+
+        </div>
       </div>
     </div>
   );
 };
 
 export default AboutUs;
+
+
+
