@@ -1,6 +1,6 @@
 import React from 'react'
-import LayoutLeft from '../Layout/LayoutLeft'
-import LayoutRight from '../Layout/LayoutRight'
+import LayoutLeft from '../Layout/LayoutLeft/LayoutLeft'
+import LayoutRight from '../Layout/LayoutRight/LayoutRight'
 
 const LiveEvents = () => {
   return (
