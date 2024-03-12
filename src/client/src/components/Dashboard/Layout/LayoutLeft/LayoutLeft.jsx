@@ -38,23 +38,37 @@ const Layout = (props) => {
         }
     }
 
+    const changeDisplay = () => {
+        if (window.innerWidth < 1440) {
+            let lftmnu = document.querySelector('.leftMenu')
+            lftmnu.style.backgroundColor = 'white'
+            lftmnu.style.height = '5rem'
+            lftmnu.style.width = '5rem'
+            document.querySelector('.leftHamburg').style.display = 'inline-flex'
+            document.querySelector('.dash-left').style.display = 'none'
+            document.querySelector('.dash-left').style.marginTop = '1rem'
+        } else {
+            let lftmnu = document.querySelector('.leftMenu')
+            lftmnu.style.backgroundColor = 'white'
+            lftmnu.style.height = '100%'
+            lftmnu.style.width = '20rem'
+            document.querySelector('.leftHamburg').style.display = 'none'
+            document.querySelector('.dash-left').style.display = 'inline-flex'
+            document.querySelector('.dash-left').style.marginTop = '0rem'
+        }
+    }
+
     useEffect(() => {
 
+        changeDisplay()
+
+        let prevWidth = window.innerWidth;
+
         const handleResize = () => {
-            if (window.innerWidth < 1440) {
-                let lftmnu = document.querySelector('.leftMenu')
-                lftmnu.style.backgroundColor = 'white'
-                lftmnu.style.height = '5rem'
-                lftmnu.style.width = '5rem'
-                document.querySelector('.leftHamburg').style.display = 'inline-flex'
-                document.querySelector('.dash-left').style.display = 'none'
-            } else {
-                let lftmnu = document.querySelector('.leftMenu')
-                lftmnu.style.backgroundColor = 'white'
-                lftmnu.style.height = '100%'
-                lftmnu.style.width = '20rem'
-                document.querySelector('.leftHamburg').style.display = 'none'
-                document.querySelector('.dash-left').style.display = 'inline-flex'
+            let currwidth = window.innerWidth;
+
+            if (currwidth !== prevWidth) {
+                changeDisplay()
             }
         };
 
@@ -70,7 +84,7 @@ const Layout = (props) => {
 
     return (
         <div className='leftMenu' style={{ position: 'fixed', overflowY: 'auto', top: 0, bottom: 0, left: 0, right: 0, zIndex: '999' }}>
-            <div className='leftHamburg' onClick={() => displayLeftMenu()} style={{ position: 'sticky', top: 5 }} >
+            <div className='leftHamburg' onClick={() => displayLeftMenu()} style={{ position: 'absolute', top: 5,zIndex:'999' }} >
                 <FaBars size={40} />
             </div>
             <div className='dash-left' style={{ width: '20rem', left: '0' }}>
