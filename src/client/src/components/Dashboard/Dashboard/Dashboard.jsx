@@ -1,6 +1,6 @@
 import React from 'react'
-import LayoutLeft from '../Layout/LayoutLeft'
-import LayoutRight from '../Layout/LayoutRight'
+import LayoutLeft from '../Layout/LayoutLeft/LayoutLeft'
+import LayoutRight from '../Layout/LayoutRight/LayoutRight'
 import Post from './Post/Post'
 import { Link } from 'react-router-dom'
 import Clubcard from './Clubcard/Clubcard'
@@ -12,8 +12,6 @@ const Dashboard = () => {
             <div style={{ width: '20rem' }}>
                 <LayoutLeft ele='dashboard' />
             </div>
-
-
             <div className='container' style={{ width: '45rem', margin: '3rem 4rem', textAlign: 'justify' }}>
                 
                 <div className='container'>
