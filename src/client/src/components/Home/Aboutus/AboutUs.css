@@ -7,10 +7,10 @@
     height: 8px;
     background-color: rgb(110, 120, 5);
     border-radius: 5%/100%;
-}
+} 
 .abtimg{
-    background-image: url('./../../../../public/Banner0.jpg');
+   /* background-image: url('./../../../../public/Banner0.jpg'); */
     background-size: cover;
     width: 140%;
     height: 35rem;
-} 
+}
