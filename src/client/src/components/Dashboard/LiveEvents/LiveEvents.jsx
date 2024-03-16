@@ -1,6 +1,7 @@
 import React from 'react'
 import LayoutLeft from '../Layout/LayoutLeft/LayoutLeft'
 import LayoutRight from '../Layout/LayoutRight/LayoutRight'
+import LiveEventComponent from './LiveEventComponent'
 
 const LiveEvents = () => {
   return (
@@ -8,14 +9,16 @@ const LiveEvents = () => {
             <div style={{ width: '20rem' }}>
                 <LayoutLeft ele='live' />
             </div>
-            <div className='' style={{ width: '40rem', margin: '10rem 4rem', textAlign: 'justify'}}>
+            <div className='' style={{ width: 'auto', margin: '3rem 1rem', textAlign: 'justify'}}>
                 <div className='liveHead'>
                     <h1>LiveEvents</h1>
                 </div>
-                <div className="liveCont">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.
-                    Non placeat molestiae eos, mollitia doloremque quasi aliquam minus, ea asperiores fugiat, accusantium dolorum obcaecati pariatur id? Mollitia eveniet, repellat deleniti, voluptates optio accusamus natus possimus sapiente dicta quibusdam perferendis.
-                    Commodi tempora veritatis ea fuga nam impedit corporis enim amet odio. Non laborum quaerat aliquid praesentium fugit esse eaque ut dolorem, ipsam commodi amet dolor. Quidem laboriosam error dolore ex?
+                <div className="liveCont container">
+                    <LiveEventComponent clubName='CLUB NAME' time='3 hrs ago' date='14 March' venue='Common Room' eventTitle='Live-Event Title' content='Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente. '/>
+                    <LiveEventComponent clubName='CLUB NAME' time='3 hrs ago' date='14 March' venue='Common Room' eventTitle='Live-Event Title' content='Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente. '/>
+                    <LiveEventComponent clubName='CLUB NAME' time='3 hrs ago' date='14 March' venue='Common Room' eventTitle='Live-Event Title' content='Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente. '/>
+                    <LiveEventComponent clubName='CLUB NAME' time='3 hrs ago' date='14 March' venue='Common Room' eventTitle='Live-Event Title' content='Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente. '/>
+
                 </div>
             </div>
             <div style={{ width: '20rem' }}>
