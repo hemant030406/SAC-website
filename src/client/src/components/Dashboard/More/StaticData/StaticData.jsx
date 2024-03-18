@@ -1,7 +1,7 @@
 import React from 'react';
 import LayoutLeft from '../../Layout/LayoutLeft/LayoutLeft';
 import LayoutRight from '../../Layout/LayoutRight/LayoutRight';
-import PDFPreview from './StaticDataComponent';
+import StaticDataComponent from './StaticDataComponent';
 
 const StaticData = () => {
   return (
@@ -14,21 +14,21 @@ const StaticData = () => {
           <h1>Static Data</h1>
         </div>
         <div className="staticDataContainer container">
-          {/* PDF Preview for Institute Transportation */}
+    
           <div className="anncCont mt-5">
-            <PDFPreview heading="Institute Transportation" overview="..." content="https://www.iitpkd.ac.in/sites/default/files/2023-10/0bccadb4-d451-48d6-8eb8-265fa44dc7d3.pdf" />
+            <StaticDataComponent heading="Institute Transportation" overview="..." content="https://www.iitpkd.ac.in/sites/default/files/2023-10/0bccadb4-d451-48d6-8eb8-265fa44dc7d3.pdf" />
           </div>
           
           <div className="anncCont mt-5">
-            <PDFPreview heading="Mess Menu" overview="..." content="src/components/Dashboard/More/StaticData/Mess Menu and Timings IIT Palakkad.pdf" />
+            <StaticDataComponent heading="Mess Menu" overview="..." content="src/components/Dashboard/More/StaticData/Mess Menu and Timings IIT Palakkad.pdf" />
           </div>
           
           <div className="anncCont mt-5">
-            <PDFPreview heading="Academic Calender" overview="..." content="https://www.iitpkd.ac.in/sites/default/files/2023-10/0bccadb4-d451-48d6-8eb8-265fa44dc7d3.pdf" />
+            <StaticDataComponent heading="Academic Calender" overview="..." content="https://www.iitpkd.ac.in/sites/default/files/2023-10/0bccadb4-d451-48d6-8eb8-265fa44dc7d3.pdf" />
           </div>
           
           <div className="anncCont mt-5">
-            <PDFPreview heading="Institute Holiday" overview="..."content="/path/to/holiday.pdf" />
+            <StaticDataComponent heading="Institute Holiday" overview="..."content="/path/to/holiday.pdf" />
           </div>
         </div>
       </div>

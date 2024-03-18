@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 
 
 const MoreLayout = () => {    
-    // const location = useLocation();
-    // const history = useHistory();
     const [isLeftVisible, setIsLeftVisible] = useState(true);
     const [isMoreExpanded, setIsMoreExpanded] = useState(true);
 
@@ -119,7 +117,6 @@ const MoreLayout = () => {
                             <>
                                 <Link className="dropdown-item" to="/static-data">
                                     <li className="dash-more lylist nav-item" >
-                                        {/* <HiDotsHorizontal size={35} style={{ margin: '0rem 0.8rem' }} /> */}
                                         Static Data
                                     </li>
                                 </Link>
