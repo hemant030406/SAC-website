@@ -92,7 +92,7 @@ const Layout = (props) => {
                 <div id="navbarText" style={{ paddingBottom: '1rem', width: 'inherit' }}>
                     <span class="navbar-text active" style={{ color: 'black', fontSize: '140%', paddingLeft: '5rem' }}>
                         Student Affairs Council
-                        <p style={{ fontSize: '58%', paddingLeft: '5rem' }}>
+                        <p style={{ fontSize: '58%', paddingLeft: '5rem' ,color:'Orange'}}>
                             Indian Institute of Technology Palakkad
                         </p>
                     </span>
