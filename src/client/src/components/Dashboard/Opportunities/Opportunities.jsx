@@ -144,7 +144,7 @@ const Opportunities = () => {
                     ))}
                 </div>
                 </div>}
-                {newproject && <NewProject/>}
+                {newproject && <NewProject newproject={newproject} projectform={projectform} ongoingprojects={ongoingprojects}/>}
             </div>
             <div style={{ width: '20rem' }}>
                 <LayoutRight />
