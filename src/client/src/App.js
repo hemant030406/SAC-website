@@ -20,6 +20,7 @@ import Clubs from './components/Dashboard/Clubs/Clubs';
 import LiveEvents from './components/Dashboard/LiveEvents/LiveEvents';
 import Opportunities from './components/Dashboard/Opportunities/Opportunities';
 import More from './components/Dashboard/More/More';
+import Budget from './components/Dashboard/More/Budget/Budget';
 import StaticData from './components/Dashboard/More/StaticData/StaticData';
 
 function App() {
@@ -45,8 +46,8 @@ function App() {
         <Route path="/live-events" element={<LiveEvents/>}/>
         <Route path="/opportunities" element={<Opportunities/>}/>
         <Route path="/more" element={<More/>}/>
+        <Route path="/more/budget" element={<Budget/>}/>
         <Route path="/static-data" element={<StaticData/>}/>
-
       </Routes>
     </Router>
   );
