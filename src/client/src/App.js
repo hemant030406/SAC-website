@@ -21,6 +21,7 @@ import LiveEvents from './components/Dashboard/LiveEvents/LiveEvents';
 import Opportunities from './components/Dashboard/Opportunities/Opportunities';
 import More from './components/Dashboard/More/More';
 import StaticData from './components/Dashboard/More/StaticData/StaticData';
+import ProjectApproval from './components/Dashboard/More/ProjectApproval/ProjectApproval';
 
 function App() {
   const [duration,setDuration] = useState(true)
@@ -46,6 +47,7 @@ function App() {
         <Route path="/opportunities" element={<Opportunities/>}/>
         <Route path="/more" element={<More/>}/>
         <Route path="/static-data" element={<StaticData/>}/>
+        <Route path="/project-approval" element={<ProjectApproval/>}/>
 
       </Routes>
     </Router>
