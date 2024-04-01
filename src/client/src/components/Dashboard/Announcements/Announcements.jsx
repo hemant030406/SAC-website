@@ -9,7 +9,7 @@ const Announcements = () => {
             <div style={{ width: '20rem' }}>
                 <LayoutLeft ele='announce' />
             </div>
-            <div className='' style={{ width: 'auto', margin: '3rem 1rem', textAlign: 'justify' }}>
+            <div className='ml-2' style={{maxWidth: '45rem', width: 'auto', margin: '3rem 1rem', textAlign: 'justify' }}>
                 <div className='anncHead'>
                     <h1>Announcements</h1>
                 </div>
@@ -20,7 +20,7 @@ const Announcements = () => {
                     <AnncmtComponent clubName='CLUB NAME' time='1 hrs ago' eventTitle='Announcement/Event Title' content='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.'/>
                 </div>
             </div>
-            <div style={{ width: '20rem' }}>
+            <div style={{ width: '22rem' }}>
                 <LayoutRight />
             </div>
         </div>
