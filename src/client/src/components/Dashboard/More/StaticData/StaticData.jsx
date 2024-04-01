@@ -2,34 +2,26 @@ import React from 'react';
 import LayoutLeft from '../../Layout/LayoutLeft/LayoutLeft';
 import LayoutRight from '../../Layout/LayoutRight/LayoutRight';
 import StaticDataComponent from './StaticDataComponent';
+import StaticDataData from '../../../../data/StaticData_data.json';
 
 const StaticData = () => {
+  const { items } = StaticDataData;
+
   return (
     <div className='d-flex flex-row'>
       <div style={{ width: '20rem' }}>
         <LayoutLeft ele='static' />
       </div>
       <div className='' style={{ width: 'auto', margin: '3rem 1rem', textAlign: 'justify'}}>
-        <div className='staticDataHead' style={{marginLeft: '4rem'}}>
+        <div className='staticDataHead' style={{marginLeft: '5rem'}}>
           <h1>Static Data</h1>
         </div>
         <div className="staticDataContainer container">
-    
-          <div className="anncCont mt-5">
-            <StaticDataComponent heading="Institute Transportation" overview="..." content="https://www.iitpkd.ac.in/sites/default/files/2023-10/0bccadb4-d451-48d6-8eb8-265fa44dc7d3.pdf" />
-          </div>
-          
-          <div className="anncCont mt-5">
-            <StaticDataComponent heading="Mess Menu" overview="..." content="src/components/Dashboard/More/StaticData/Mess Menu and Timings IIT Palakkad.pdf" />
-          </div>
-          
-          <div className="anncCont mt-5">
-            <StaticDataComponent heading="Academic Calender" overview="..." content="https://www.iitpkd.ac.in/sites/default/files/2023-10/0bccadb4-d451-48d6-8eb8-265fa44dc7d3.pdf" />
-          </div>
-          
-          <div className="anncCont mt-5">
-            <StaticDataComponent heading="Institute Holiday" overview="..."content="/path/to/holiday.pdf" />
-          </div>
+          {items.map(item => (
+            <div className="anncCont mt-5" key={item.heading}>
+              <StaticDataComponent heading={item.heading} overview={item.overview} link={item.link} />
+            </div>
+          ))}
         </div>
       </div>
       <div style={{ width: '20rem' }}>
@@ -40,4 +32,3 @@ const StaticData = () => {
 }
 
 export default StaticData;
-
