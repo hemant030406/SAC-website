@@ -3,7 +3,7 @@ import React from 'react'
 export default function LiveEventComponent(props) {
     return (
         <>
-            <div className="anncCont container mt-5">
+            <div className="anncCont container d-flex mt-5">
                 <div className="card lgcard border-0 w-200 mb-3">
                     <div className="row" style={{ backgroundColor: 'rgb(250 199 170)' }}>
                         {/* First column (Announcement)*/}
