@@ -1,9 +1,10 @@
-import React , {useState} from "react";
+import React , {useState , useEffect} from "react";
 import LayoutLeft from "../Layout/LayoutLeft/LayoutLeft";
 import LayoutRight from "../Layout/LayoutRight/LayoutRight";
 import MyClubs from "./components/MyClubs";
 import "./styles.css";
 import ClubPage from "./components/ClubPage";
+import axios from 'axios'
 
 const Clubs = () => {
   const [activeclub , setactiveclub] = useState(false);
@@ -12,78 +13,18 @@ const Clubs = () => {
     setclubname(element);
     setactiveclub(true);
   }
-  const clubdetails = [
-    {
-      name : "Yacc",
-      description : "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
-      ClubHeads : "Mangesh , Yukta" ,
-      ClubLeads : "Nideesh",
-      Clubemail: "yacc@iitpkd.ac.in",
-      ContactNo : "1234567892",
-      Joined : "yes",
-      image : "yacc.jpg"
-    },
-    {
-      name : "Finance Club",
-      description : "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
-      ClubHeads : "Mangesh , Yukta" ,
-      ClubLeads : "Nideesh",
-      Clubemail: "dac@iitpkd.ac.in",
-      ContactNo : "1234567892",
-      Joined : "no",
-      image : "financeclub.jpg"
-    },
-    {
-      name : "Horticulture club",
-      description : "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
-      ClubHeads : "Mangesh , Yukta" ,
-      ClubLeads : "Nideesh",
-      Clubemail: "dac@iitpkd.ac.in",
-      ContactNo : "1234567892",
-      Joined : "no",
-      image : "horticulture_logo.png"
-    },
-    {
-      name : "Curtain Call",
-      description : "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
-      ClubHeads : "Mangesh , Yukta" ,
-      ClubLeads : "Nideesh",
-      Clubemail: "curtaincall@iitpkd.ac.in",
-      ContactNo : "1234567892",
-      Joined : "yes",
-      image : "curtaincall.png"
-    },
-    {
-      name : "EBSB",
-      description : "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
-      ClubHeads : "Mangesh , Yukta" ,
-      ClubLeads : "Nideesh",
-      Clubemail: "curtaincall@iitpkd.ac.in",
-      ContactNo : "1234567892",
-      Joined : "yes",
-      image : "ebsb.jpg"
-    },
-    {
-      name : "Akshar",
-      description : "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
-      ClubHeads : "Mangesh , Yukta" ,
-      ClubLeads : "Nideesh",
-      Clubemail: "curtaincall@iitpkd.ac.in",
-      ContactNo : "1234567892",
-      Joined : "yes",
-      image : "akshar.jpg"
-    },
-    {
-      name : "Bioscope",
-      description : "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
-      ClubHeads : "Mangesh , Yukta" ,
-      ClubLeads : "Nideesh",
-      Clubemail: "curtaincall@iitpkd.ac.in",
-      ContactNo : "1234567892",
-      Joined : "yes",
-      image : "bioscope.jpg"
+  const [clubdetails,setclubdetails] = useState([]);
+  useEffect(()=>{
+    axios.get('http://localhost:8000/clubs')
+    .then((response)=>{
+      setclubdetails(response.data)
     }
-  ]
+    )
+    .catch((error)=>{
+      console.log(error)
+    }
+    )
+  })
   return (
     <div className="d-flex flex-row">
       <div style={{ width: "20rem" }}>
