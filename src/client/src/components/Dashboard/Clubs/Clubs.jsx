@@ -30,6 +30,7 @@ const Clubs = () => {
       <div style={{ width: "20rem" }}>
         <LayoutLeft ele="clubs" />
       </div>
+      <div className="d-flex justify-content-center" style={{width:'calc(100% - 42rem)'}}>
       <div
         className="container"
         style={{ width: "46rem", margin: "3rem 1rem", textAlign: "justify"}}>
@@ -73,6 +74,7 @@ const Clubs = () => {
             return <ClubPage name= {item.name} description = {item.description} ClubHeads = {item.ClubHeads} ClubLeads = {item.ClubLeads} Clubemail={item.Clubemail} ContactNo={item.ContactNo} Joined={item.Joined} image={item.image}/>
           }
         })}
+      </div>
       </div>
       <div style={{ width: "20rem" }}>
         <LayoutRight />

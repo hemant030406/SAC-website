@@ -9,8 +9,9 @@ const ProjectApproval = () => {
   return (
         <div className='d-flex flex-row'>
             <div style={{ width: '20rem' }}>
-                <LayoutLeft ele='' />
+                <LayoutLeft ele='proj' />
             </div>
+            <div className='d-flex justify-content-center' style={{width:'calc(100% - 42rem)'}}>
             <div className='' style={{ width: '43rem', margin: '3rem 1rem', textAlign: 'justify'}}>
                 <div className='projecthead'>
                     <h1>Project Approval</h1>
@@ -20,6 +21,7 @@ const ProjectApproval = () => {
                 <ProjectApproveComponent clubName='CLUB NAME' name='NAME' member_num='10' time='3 hrs ago' date='14 March' venue='Common Room' Skill1='Skill 1' Skill2='Skill 2' eventTitle='Project/Opportunity Title' content='Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore. '/>
 
                 </div>
+            </div>
             </div>
             <div style={{ width: '22rem' }}>
                 <LayoutRight />

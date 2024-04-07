@@ -47,7 +47,7 @@ function App() {
         <Route path="/live-events" element={<LiveEvents/>}/>
         <Route path="/opportunities" element={<Opportunities/>}/>
         <Route path="/more" element={<More/>}/>
-        <Route path="/more/budget" element={<Budget/>}/>
+        <Route path="/budget-tracking" element={<Budget/>}/>
         <Route path="/static-data" element={<StaticData/>}/>
         <Route path="/project-approval" element={<ProjectApproval/>}/>
 
