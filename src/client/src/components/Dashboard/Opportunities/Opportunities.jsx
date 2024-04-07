@@ -73,6 +73,7 @@ const Opportunities = () => {
             <div style={{ width: '20rem' }}>
                 <LayoutLeft ele='oppor' />
             </div>
+            <div className='d-flex justify-content-center' style={{width:'calc(100% - 43rem)'}}>
             <div className='container' style={{ width:'46rem', height:"auto" , margin: '3rem 1rem', textAlign: 'justify' }}>
                 <div className='container'>
                     <h1>Opportunities / Projects
@@ -110,6 +111,7 @@ const Opportunities = () => {
                 </div>
                 </div>}
                 {newproject && <NewProject newproject={newproject} projectform={projectform} ongoingprojects={ongoingprojects}/>}
+            </div>
             </div>
             <div style={{ width: '20rem' }}>
                 <LayoutRight />

@@ -9,9 +9,10 @@ const Budget = () => {
     return (
         <div className='d-flex flex-row'>
             <div style={{ width: '20rem' }}>
-                <LayoutLeft ele='more' />
+                <LayoutLeft ele='budge' />
             </div>
-            <div className='' style={{ width: '40rem', margin: '0rem 4rem', textAlign: 'justify' }}>
+            <div className='d-flex justify-content-center' style={{width:'calc(100% - 40rem)'}}>
+            <div className='' style={{ width: '40rem', margin: '3rem 0rem', textAlign: 'justify' }}>
                 <div className='calHead'>
                     <h1>More/Budget Tracking</h1>
                 </div>
@@ -33,6 +34,7 @@ const Budget = () => {
                     <RecentTrans/>
                     </div>
                 </div>
+            </div>
             </div>
             <div style={{ width: '20rem' }}>
                 <LayoutRight />

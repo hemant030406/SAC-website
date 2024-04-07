@@ -10,9 +10,10 @@ const StaticData = () => {
   return (
     <div className='d-flex flex-row'>
       <div style={{ width: '20rem' }}>
-        <LayoutLeft ele='static' />
+        <LayoutLeft ele='statdat' />
       </div>
-      <div className='' style={{ width: 'auto', margin: '3rem 1rem', textAlign: 'justify'}}>
+      <div className='d-flex justify-content-center' style={{width:'calc(100% - 43rem)'}}>
+      <div className='' style={{ width: '50rem', margin: '3rem 1rem', textAlign: 'justify'}}>
         <div className='staticDataHead' style={{marginLeft: '5rem'}}>
           <h1>Static Data</h1>
         </div>
@@ -23,6 +24,7 @@ const StaticData = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
       <div style={{ width: '20rem' }}>
         <LayoutRight />
