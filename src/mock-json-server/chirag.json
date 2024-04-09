@@ -130,5 +130,30 @@
             "Skill1" : "Python",
             "Skill2" : "JavaScpt"
         }
-    ]
+    ],
+    "DashAnct" : [
+        {
+            "img" : "iitlogo.jpg",
+            "heading" :"Lorem ipsum dolor sit amet "  ,
+            "time": "1 day ago"
+        },
+        {
+            "img" : "iitlogo.jpg",
+            "heading" :"Lorem ipsum dolor sit amet "  ,
+            "time": "1 day ago"
+        },
+        {
+            "img" : "iitlogo.jpg",
+            "heading" :"Lorem ipsum dolor sit amet "  ,
+            "time": "1 day ago"
+        },
+        {
+            "img" : "iitlogo.jpg",
+            "heading" :"Lorem ipsum dolor sit amet "  ,
+            "time": "1 day ago"
+        }
+    ],
+    "status":{
+        "clubs" : "5" , "events" : "10" , "ongoingProjects" : "6" , "hourlearning" : "3"
+    }
 }

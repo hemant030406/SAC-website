@@ -7,6 +7,7 @@ import NewProject from './NewProject';
 import axios from 'axios';
 
 const Opportunities = () => {
+    const [nodisplay , setnodisplay] = useState(false);
     const [completedprojects , setcompletedprojects] = useState([]);
     const [ongoingprojects , setongoingprojects] = useState([])
     useEffect(()=>{
@@ -16,7 +17,7 @@ const Opportunities = () => {
         }
         )
         .catch((error)=>{
-          console.log(error)
+          setnodisplay(true);
         }
         )
       })
@@ -109,6 +110,9 @@ const Opportunities = () => {
                         <OpportunityCard clubName={element.clubName} time={element.time} eventTitle={element.eventTitle} content={element.content} status={element.status} Skill1={element.Skill1} Skill2={element.Skill2}/>
                     ))}
                 </div>
+                {
+                nodisplay && <div style={{fontSize:"1.3rem",marginLeft:"1rem",marginBottom:"1rem"}}> No Opportunities right now </div>
+                }
                 </div>}
                 {newproject && <NewProject newproject={newproject} projectform={projectform} ongoingprojects={ongoingprojects}/>}
             </div>
