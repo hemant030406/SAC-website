@@ -1,11 +1,25 @@
 import React from 'react'
+import LayoutLeft from "../../Layout/LayoutLeft/LayoutLeft";
+import LayoutRight from "../../Layout/LayoutRight/LayoutRight";
 import { Link } from 'react-router-dom'
 import ForumDiscussion from './ForumDiscussion'
+
 export default function ClubPage(props) {
-  
   return (
-    <>
-    <div className="container">
+    <div className="d-flex flex-row">
+    <div style={{ width: "20rem" }}>
+      <LayoutLeft ele="clubs" />
+    </div>
+    <div className="d-flex justify-content-center" style={{width:'calc(100% - 42rem)'}}>
+    <div
+      className="container"
+      style={{ width: "46rem", margin: "3rem 1rem", textAlign: "justify"}}>
+      <div className="container">
+        <h1>Clubs
+        <button style={{border:"none" , backgroundColor:"white"}} onClick={()=>{props.setactiveclub(false)}}>&lt;</button>
+        </h1>
+      </div>
+      <div className="container">
       <div className="card-title my-4" style={{fontSize:"2rem"}}>{props.name}</div>
       <div className="card my-3" style={{border:"none"}}>
         <div className='card d-flex flex-row my-2' style={{border:"none"}}>
@@ -57,6 +71,11 @@ export default function ClubPage(props) {
         <button class="btn" type="button" onClick={()=>{alert("Request Sent")}} disabled={props.Joined==="yes"} style={{fontSize:"1.5rem" , borderRadius:"1rem" ,color:"black" ,backgroundColor: 'rgb(243 130 33)'}}>Request to Join</button>
       </div>
     </div>
-    </>
+    </div>
+    </div>
+    <div style={{ width: "20rem" }}>
+      <LayoutRight />
+    </div>
+  </div>
   )
 }

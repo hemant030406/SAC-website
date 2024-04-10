@@ -1,14 +1,54 @@
-import React from 'react'
+import React , {useState , useEffect} from 'react'
 import LayoutLeft from '../Layout/LayoutLeft/LayoutLeft'
 import LayoutRight from '../Layout/LayoutRight/LayoutRight'
 import Post from './Post/Post'
 import { Link } from 'react-router-dom'
-import Clubcard from './Clubcard/Clubcard'
 import { BiSolidBookReader } from "react-icons/bi";
+import axios from 'axios'
+import Clubcard from './Clubcard/Clubcard'
+import ClubPage from '../Clubs/components/ClubPage'
 
 const Dashboard = () => {
+    const [nodisplay , setnodisplay] = useState(false);
+    const [activeclub , setactiveclub] = useState(false);
+    const [clubname,setclubname] = useState("");
+    const [myclubs , setmyclubs] = useState([]);
+    const [dashAnct,setdashAnct] = useState([]);
+    const [status , setstatus] = useState([]);
+    const onclicked = (element)=>{
+        setactiveclub(true);
+        setclubname(element);
+    }
+    useEffect(()=>{
+     axios.get('http://localhost:8000/clubs')  
+        .then((response)=>{
+            setmyclubs(response.data);
+        })
+        .catch((error)=>{
+          setnodisplay(true);
+        })
+    })
+    useEffect(()=>{
+        axios.get('http://localhost:8000/DashAnct')
+        .then((response)=>{
+            setdashAnct(response.data);
+        })
+        .catch((error)=>{
+            setnodisplay(true);
+        })
+    })
+    useEffect(()=>{
+        axios.get('http://localhost:8000/status')
+        .then((response)=>{
+            setstatus(response.data);
+        })
+        .catch(()=>{
+            setstatus({"clubs" : "0" , "events" : "0" , "ongoingProjects" : "0" , "hourlearning" : "0"});
+        })
+    })
     return (
-        <div className='d-flex flex-row'>
+        <>
+        {!activeclub &&<div className='d-flex flex-row'>
             <div style={{ width: '20rem' }}>
                 <LayoutLeft ele='dashboard' />
             </div>
@@ -27,11 +67,14 @@ const Dashboard = () => {
                             </Link>
                         </div>
 
-                        <Post img="iitlogo.jpg" heading="Lorem ipsum dolor sit amet " time="1 day ago" />
-                        <Post img="iitlogo.jpg" heading="Lorem ipsum dolor sit amet " time="2 days ago" />
-                        <Post img="iitlogo.jpg" heading="Lorem ipsum dolor sit amet " time="3 days ago" />
-                        <Post img="iitlogo.jpg" heading="Lorem ipsum dolor sit amet " time="4 days ago" />
-
+                        {
+                            dashAnct.map((element , index)=>{
+                                return <Post img= {element.img} heading = {element.heading} time = {element.time}/>
+                            })
+                        }
+                        {
+                            nodisplay && <div style={{fontSize:"1.3rem",marginLeft:"1rem",marginBottom:"1rem"}}> No Announcement to display </div>
+                            }
                     </div>
 
 
@@ -45,7 +88,7 @@ const Dashboard = () => {
                                     <BiSolidBookReader style={{ color: "rgb(243 130 33)", fontSize: "2rem" }} />
                                 </div>
                                 <div>
-                                    5 Clubs
+                                    {status.clubs} Clubs
                                 </div>
                             </div>
                             <div className='vr my-3 mx-3' style={{ border: "1px solid" }}></div>
@@ -54,7 +97,7 @@ const Dashboard = () => {
                                     <BiSolidBookReader style={{ color: "rgb(243 130 33)", fontSize: "2rem" }} />
                                 </div>
                                 <div>
-                                    10 Events
+                                    {status.events} Events
                                 </div>
                             </div>
                             <div className='vr my-3 mx-3' style={{ border: "1px solid" }}></div>
@@ -63,7 +106,7 @@ const Dashboard = () => {
                                     <BiSolidBookReader style={{ color: "rgb(243 130 33)", fontSize: "2rem" }} />
                                 </div>
                                 <div style={{ textAlign: "center" }}>
-                                    2 Ongoing projects
+                                    {status.ongoingProjects} Ongoing projects
                                 </div>
                             </div>
                             <div className='vr my-3 mx-3' style={{ border: "1px solid" }}></div>
@@ -72,7 +115,7 @@ const Dashboard = () => {
                                     <BiSolidBookReader style={{ color: "rgb(243 130 33)", fontSize: "2rem" }} />
                                 </div>
                                 <div style={{ textAlign: "center" }}>
-                                    2 hours learning
+                                    {status.hourlearning} hours learning
                                 </div>
                             </div>
                         </div>
@@ -84,13 +127,15 @@ const Dashboard = () => {
                             <h3>My Clubs</h3>
                         </div>
                         <div className='container row flex-row flex-nowrap overflow-auto'>
-                            <Clubcard />
-                            <Clubcard />
-                            <Clubcard />
-                            <Clubcard />
-                            <Clubcard />
-                            <Clubcard />
+                            {myclubs.map((element,index)=>{
+                                if (element.Joined === "yes"){
+                                    return  <Clubcard key={index} obj={element} onclick={onclicked}/>
+                                }
+                            })}
                         </div>
+                        {
+                            nodisplay && <div style={{fontSize:"1.3rem",marginLeft:"1rem",marginBottom:"1rem"}}> No Clubs Joined </div>
+                            }
                     </div>
                 </div>
             </div>
@@ -100,7 +145,14 @@ const Dashboard = () => {
                 <LayoutRight />
             </div>
 
-        </div>
+        </div>}
+
+        {activeclub &&  myclubs.map((item,index)=>{
+            if (item.name===clubname){
+              return <ClubPage key={index} setactiveclub={setactiveclub} name= {item.name} description = {item.description} ClubHeads = {item.ClubHeads} ClubLeads = {item.ClubLeads} Clubemail={item.Clubemail} ContactNo={item.ContactNo} Joined={item.Joined} image={item.image}/>
+            }
+          })}
+        </>
     )
 }
 
