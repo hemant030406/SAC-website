@@ -1,0 +1,362 @@
+{
+    "announcement": [
+        {
+            "clubName": "YACC",
+            "logo_image": "yacc.jpg",
+            "time": "3 hrs ago",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente."
+        },
+        {
+            "clubName": "Horticulture Club",
+            "logo_image": "horticulture_logo.png",
+            "time": "3 hrs ago",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente."
+        },
+        {
+            "clubName": "Curtain Call",
+            "logo_image": "curtaincall.png",
+            "time": "3 hrs ago",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente."
+        },
+        {
+            "clubName": "EBSB",
+            "logo_image": "ebsb.jpg",
+            "time": "3 hrs ago",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente."
+        }
+    ],
+    "liveEvent": [
+        {
+            "clubName": "YACC",
+            "logo_image": "yacc.jpg",
+            "time": "3 hrs ago",
+            "date": "14 March",
+            "venue": "Common room",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.",
+            "poster_img": "https://picsum.photos/150/150"
+        },
+        {
+            "clubName": "Horticulture Club",
+            "logo_image": "horticulture_logo.png",
+            "time": "3 hrs ago",
+            "date": "14 March",
+            "venue": "Common room",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.",
+            "poster_img": "https://picsum.photos/150/150"
+        },
+        {
+            "clubName": "Curtain Call",
+            "logo_image": "curtaincall.png",
+            "time": "3 hrs ago",
+            "date": "14 March",
+            "venue": "Common room",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.",
+            "poster_img": "https://picsum.photos/150/150"
+        },
+        {
+            "clubName": "EBSB",
+            "logo_image": "ebsb.jpg",
+            "time": "3 hrs ago",
+            "date": "14 March",
+            "venue": "Common room",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.",
+            "poster_img": "https://picsum.photos/150/150"
+        }
+    ],
+    "projectApproval": [
+        {
+            "name": "PROJECT_1",
+            "clubName": "YACC",
+            "logo_image": "yacc.jpg",
+            "member_num": "10",
+            "time": "3 hrs ago",
+            "date": "14 March",
+            "venue": "Common room",
+            "Skill1": "web development",
+            "Skill2": "cpp",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente."
+        },
+        {
+            "name": "PROJECT_2",
+            "clubName": "Horticulture Club",
+            "logo_image": "horticulture_logo.png",
+            "member_num": "7",
+            "time": "3 hrs ago",
+            "date": "14 March",
+            "venue": "Common room",
+            "Skill1": "python/c",
+            "Skill2": "react",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente."
+        },
+        {
+            "name": "PROJECT_3",
+            "clubName": "EBSB",
+            "logo_image": "ebsb.jpg",
+            "member_num": "9",
+            "time": "3 hrs ago",
+            "date": "14 March",
+            "venue": "Common room",
+            "Skill1": "nodejs",
+            "Skill2": "app development",
+            "eventTitle": "Announcement/Event Title",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente."
+        }
+    ],
+    "Pie": {
+        "Expenditure": {
+            "Travel": 500,
+            "Merch": 100,
+            "Workshop": 100
+        },
+        "Color": {
+            "Red": "Travel",
+            "Blue": "Merch",
+            "Yellow": "Workshop"
+        }
+    },
+    "Recent": {
+        "colHead": [
+            "Name",
+            "Mode",
+            "Date",
+            "Amount"
+        ],
+        "objs": [
+            {
+                "Name": "Figma",
+                "Mode": "Cash",
+                "Date": "26-06-2023",
+                "Amount": -5000
+            },
+            {
+                "Name": "Merch",
+                "Mode": "UPI",
+                "Date": "26-06-2023",
+                "Amount": -8000
+            },
+            {
+                "Name": "Travel",
+                "Mode": "Cheque",
+                "Date": "26-06-2023",
+                "Amount": 10000
+            }
+        ]
+    },
+    "posts": [
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typicode"
+        },
+        {
+            "id": 2,
+            "title": "test-data",
+            "author": "kunal"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    },
+    "clubs": [
+        {
+            "name": "Yacc",
+            "description": "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
+            "ClubHeads": "abc , abc",
+            "ClubLeads": "abc",
+            "Clubemail": "yacc@iitpkd.ac.in",
+            "ContactNo": "1234556677",
+            "Joined": "yes",
+            "image": "yacc.jpg"
+        },
+        {
+            "name": "Finance Club",
+            "description": "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
+            "ClubHeads": "abc , abc",
+            "ClubLeads": "abc",
+            "Clubemail": "yacc@iitpkd.ac.in",
+            "ContactNo": "1234556677",
+            "Joined": "no",
+            "image": "financeclub.jpg"
+        },
+        {
+            "name": "Horticulture Club",
+            "description": "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
+            "ClubHeads": "abc , abc",
+            "ClubLeads": "abc",
+            "Clubemail": "yacc@iitpkd.ac.in",
+            "ContactNo": "1234556677",
+            "Joined": "no",
+            "image": "horticulture_logo.png"
+        },
+        {
+            "name": "Curtain Call",
+            "description": "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
+            "ClubHeads": "abc , abc",
+            "ClubLeads": "abc",
+            "Clubemail": "yacc@iitpkd.ac.in",
+            "ContactNo": "1234556677",
+            "Joined": "yes",
+            "image": "curtaincall.png"
+        },
+        {
+            "name": "EBSB",
+            "description": "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
+            "ClubHeads": "abc , abc",
+            "ClubLeads": "abc",
+            "Clubemail": "yacc@iitpkd.ac.in",
+            "ContactNo": "1234556677",
+            "Joined": "yes",
+            "image": "ebsb.jpg"
+        },
+        {
+            "name": "Akshar",
+            "description": "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
+            "ClubHeads": "abc , abc",
+            "ClubLeads": "abc",
+            "Clubemail": "yacc@iitpkd.ac.in",
+            "ContactNo": "1234556677",
+            "Joined": "yes",
+            "image": "akshar.jpg"
+        },
+        {
+            "name": "Bioscope",
+            "description": "A dynamic and inclusive community of passionate coders and algorithmic thinkers. Our mission is to foster a deep and abiding love for coding, share knowledge , and provide platform for students to enhance their coding skills and take on real-world challenges.",
+            "ClubHeads": "abc , abc",
+            "ClubLeads": "abc",
+            "Clubemail": "yacc@iitpkd.ac.in",
+            "ContactNo": "1234556677",
+            "Joined": "yes",
+            "image": "bioscope.jpg"
+        }
+    ],
+    "completedprojects": [
+        {
+            "clubName": "CLUB NAME",
+            "time": "3 hrs ago",
+            "eventTitle": "Project/Opportunity Title",
+            "content": "Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.",
+            "status": "Completed",
+            "Skill1": "Python",
+            "Skill2": "JavaScpt"
+        },
+        {
+            "clubName": "CLUB NAME",
+            "time": "3 hrs ago",
+            "eventTitle": "Project/Opportunity Title",
+            "content": "Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.",
+            "status": "Completed",
+            "Skill1": "Python",
+            "Skill2": "JavaScpt"
+        },
+        {
+            "clubName": "CLUB NAME",
+            "time": "3 hrs ago",
+            "eventTitle": "Project/Opportunity Title",
+            "content": "Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.",
+            "status": "Completed",
+            "Skill1": "Python",
+            "Skill2": "JavaScpt"
+        }
+    ],
+    "ongoingprojects": [
+        {
+            "clubName": "CLUB NAME",
+            "time": "3 hrs ago",
+            "eventTitle": "Project/Opportunity Title",
+            "content": "Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.",
+            "status": "Ongoing",
+            "Skill1": "Python",
+            "Skill2": "JavaScpt"
+        },
+        {
+            "clubName": "CLUB NAME",
+            "time": "3 hrs ago",
+            "eventTitle": "Project/Opportunity Title",
+            "content": "Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.",
+            "status": "Ongoing",
+            "Skill1": "Python",
+            "Skill2": "JavaScpt"
+        },
+        {
+            "clubName": "CLUB NAME",
+            "time": "3 hrs ago",
+            "eventTitle": "Project/Opportunity Title",
+            "content": "Announcement/Event description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quidem rem unde non aut perspiciatis in, facilis possimus distinctio labore consequatur quas quibusdam? Ut blanditiis possimus itaque voluptas ea sapiente.",
+            "status": "Ongoing",
+            "Skill1": "Python",
+            "Skill2": "JavaScpt"
+        }
+    ],
+    "DashAnct": [
+        {
+            "img": "iitlogo.jpg",
+            "heading": "Lorem ipsum dolor sit amet ",
+            "time": "1 day ago"
+        },
+        {
+            "img": "iitlogo.jpg",
+            "heading": "Lorem ipsum dolor sit amet ",
+            "time": "1 day ago"
+        },
+        {
+            "img": "iitlogo.jpg",
+            "heading": "Lorem ipsum dolor sit amet ",
+            "time": "1 day ago"
+        },
+        {
+            "img": "iitlogo.jpg",
+            "heading": "Lorem ipsum dolor sit amet ",
+            "time": "1 day ago"
+        }
+    ],
+    "status": {
+        "clubs": "5",
+        "events": "10",
+        "ongoingProjects": "6",
+        "hourlearning": "3"
+    },
+    "councils": [
+        {
+            "title": "Tech Council",
+            "img": "SAClogo.png",
+            "link": "https://sac.iitpkd.ac.in/technical"
+        },
+        {
+            "title": "Acad Council",
+            "img": "SAClogo.png",
+            "link": "https://sac.iitpkd.ac.in/academic"
+        },
+        {
+            "title": "Cultural Council",
+            "img": "SAClogo.png",
+            "link": "https://sac.iitpkd.ac.in/cultural"
+        },
+        {
+            "title": "Hostel Council",
+            "img": "SAClogo.png",
+            "link": "https://sac.iitpkd.ac.in/hostel"
+        },
+        {
+            "title": "Sports Council",
+            "img": "SAClogo.png",
+            "link": "https://sac.iitpkd.ac.in/sports"
+        }
+    ]
+}

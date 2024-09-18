@@ -10,7 +10,7 @@ const Announce = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:8000/announcements');
+      const response = await fetch('http://localhost:8000/announcement');
       const data = await response.json();
       setAnnouncements(data);
     } catch (error) {

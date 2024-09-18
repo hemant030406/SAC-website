@@ -1,8 +1,14 @@
 import React from "react";
 import "./Login.css"
+import { useNavigate } from "react-router-dom";
 
 
 export default function Login() {
+    let nav = useNavigate();
+    const redHome = () => {
+        nav('/')
+    }
+
     return (
         <div className="bg-container d-flex justify-content-center align-items-center">
 
@@ -30,7 +36,7 @@ export default function Login() {
                                         Sign in with Google
                                     </button>
                                     
-                                    <button type="button" class="btn btn-outline-primary p-1 my-3 pe-3">
+                                    <button type="button" class="btn btn-outline-primary p-1 my-3 pe-3" onClick={redHome}>
                                         <img src="user.png" className="img-fluid rounded-start me-3" alt="..." style={{ maxWidth: '80%', height: 'auto' }} />
                                         Continue as a Guest
                                     </button>

@@ -1,6 +1,16 @@
 .dash-left{
     display: inline-flex;
     flex-direction: column;
+    width: 20rem;
+    left: 0;
+}
+
+.iitlogo{
+    background-size: contain;
+    background-position: center;
+    height: 5rem;
+    width: 5rem;
+    background-repeat: no-repeat
 }
 
 #navbarText{
@@ -20,12 +30,28 @@
     font-size: 150%;
     width: inherit;
     padding: 1.5rem 2rem;
+    background-color: rgb(250 199 170);
+    border-top: 0.5px solid #e2dbdb;
 }
 .lylistmid{
     border-bottom:1px solid #e2dbdb;
 }
 .leftMenu{
     width: 20rem;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* overflow: -moz-scrollbars-none; */
+}
+.activeBar{
+    background-color: rgb(243 130 33);
 }
 
 @media screen and (max-width:1440px) {

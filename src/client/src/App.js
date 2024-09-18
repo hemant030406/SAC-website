@@ -23,6 +23,7 @@ import More from './components/Dashboard/More/More';
 import Budget from './components/Dashboard/More/Budget/Budget';
 import StaticData from './components/Dashboard/More/StaticData/StaticData';
 import ProjectApproval from './components/Dashboard/More/ProjectApproval/ProjectApproval';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
   const [duration,setDuration] = useState(true)
@@ -35,7 +36,6 @@ function App() {
   )
 
   return (
-    // <div className='container btn' > Hello world </div>
     <Router>
       <Routes> 
         <Route path = "/" element={duration ? <Landing/>:<Home/>}/>
@@ -50,7 +50,7 @@ function App() {
         <Route path="/budget-tracking" element={<Budget/>}/>
         <Route path="/static-data" element={<StaticData/>}/>
         <Route path="/project-approval" element={<ProjectApproval/>}/>
-
+        <Route path='*' element={<PageNotFound/>}/>
       </Routes>
     </Router>
   );
